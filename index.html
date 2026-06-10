@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Rachel Lee</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar large-screen-navbar">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#About-Me" class="nav-link hover-transition"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="#Previous-Work" class="nav-link hover-transition"
+            >Previous Work</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#Projects" class="nav-link hover-transition"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="#Contact" class="nav-link hover-transition"
+            >Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar small-screen-navbar">
+        <input
+          type="checkbox"
+          class="navbar-toggle-trigger"
+          id="navbar-toggle-trigger"
+        />
+        <label
+          for="navbar-toggle-trigger"
+          id="navbar-toggle-expand-button"
+          class="navbar-circular-icon-button"
+          aria-label="open navbar list"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div
+          id="small-screen-navbar-element-container"
+          class="small-screen-navbar-element-container"
+        >
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#About-Me" class="nav-link hover-transition"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#Previous-Work" class="nav-link hover-transition"
+              >Previous Work</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#Projects" class="nav-link hover-transition"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#Contact" class="nav-link hover-transition"
+                >Contact</a
+              >
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="dark-background-container section-below-navbar">
+      <div
+        class="space-evenly-distributed-row-container vertically-stacked-mid-screen-container content-container"
+      >
+        <div class="landing-text-container">
+          <h1 class="heading-1">Rachel Lee</h1>
+          <p>
+            Summary or Photo?
+          </p>
+        </div>
+      </div>
+      <div id="About-Me" class="content-container">
+        <h1>About Me</h1>
+        <p>
+          Ab me pt 1
+          <br />
+          <br />
+          Ab me pt 2
+        </p>
+      </div>
+    </div>
+
+    <div id="Previous-Work" class="content-container">
+      <h1 class="clear-margin-bottom">Previous Work</h1>
+      <div
+        class="space-evenly-distributed-row-container vertically-stacked-mid-screen-container"
+      >
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Work 1</h2>
+            <p>
+              Work 1 description.
+            </p>
+          </div>
+          <a class="more-info-button">More Info</a>
+        </div>
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Work 1</h3>
+              <button class="close-popup-button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <p>
+              Work 1 description.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Work 2</h2>
+            <p>
+              Work 2 description.
+            </p>
+          </div>
+          <a class="more-info-button">More Info</a>
+        </div>
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Work 2</h3>
+              <button class="close-popup-button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <p>
+              Work 2 description.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Work 3</h2>
+            <p>
+              Work 3 description.
+            </p>
+          </div>
+          <a class="more-info-button">More Info</a>
+        </div>
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Work 3</h3>
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <p>
+              Work 2 description.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-background-container">
+      <div id="Projects" class="content-container">
+        <h1>Projects</h1>
+        <div class="space-between-distributed-row-container content-container">
+          <div class="projects-text-margin-left">
+            <h2>Project 1</h2>
+            <p>
+              Project 1 description.
+            </p>
+          </div>
+        </div>
+        <div class="space-between-distributed-row-container content-container">
+          <div class="projects-text-margin-right">
+            <h2>Project 2</h2>
+            <p>
+              Project 2 description.
+            </p>
+          </div>
+        </div>
+        <div class="space-between-distributed-row-container content-container">
+          <div class="projects-text-margin-left">
+            <h2>Project 3</h2>
+            <p>
+              Project 3 description.
+            </p>
+          </div>
+        </div>
+        <div class="space-between-distributed-row-container content-container">
+          <div class="projects-text-margin-right">
+            <h2>Project 4</h2>
+            <p>
+              Project 4 description.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-background-container">
+      <form id="Contact" class="content-container form">
+        <h1>Contact Me</h1>
+        <div
+          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+        >
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Name</span>
+            <input
+              aria-label="name"
+              class="form-input-box"
+              type="text"
+              id="name"
+              name="name"
+            />
+          </p>
+        </div>
+        <div
+          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+        >
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Email</span>
+            <input
+                aria-label="email"
+                class="form-input-box"
+                type="email"
+                id="email"
+                name="email"
+            />
+          </p>
+        </div>
+        <div
+          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+        >
+          <p class="label-input-group form-element-container">
+            <span class="form-label form-row">Message Rachel:</span>
+            <textarea
+                aria-label="email"
+                class="form-textarea form-row form-input-box"
+                type="email"
+                id="email"
+                name="email"
+            ></textarea>
+          </p>
+        </div>
+      </form>
+      <div
+        class="form space-evenly-distributed-row-container form-buttons-container"
+      >
+        <input class="form-button" type="submit" value="submit" />
+        <input class="form-button" type="reset" value="reset" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      Footer
+    </footer>
+  </body>
+</html>
