@@ -18,3 +18,5 @@ Commit 1:
 I used the website from Lab 10 debugging to heavily reference the base strucutre of my website for this first commit. I copied a lot of code so there are some class id's and labels that might not make sense, and I also delete images and replaced some text to plan out what I plan to incorporate instead to follow the requiremets of the personal project.
 
 I used Lab 10 as my fist reference because I liked how the example website for that lab had "more info" buttons and boxes that open up, which I thought I could use for my projects and such. I defientely plan to add more so that I am not just copying this website though.
+
+Just noticed that the commit messages themselves had to be meaningful, so I am recommitting with a more descriptive message.
