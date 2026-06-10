@@ -21,7 +21,7 @@ for (const closePopupButton of closePopupButtons) {
 const createLoadingContainer = function () {
   const loadingContainer = document.querySelector('.loading-container');
   const loader = document.createElement('img');
-  loader.src = '../../images/loader.gif';
+  loader.src = './images/loader.gif';
   loader.alt = 'loader gif while the data loads';
   loader.width = 60;
   loader.height = 60;

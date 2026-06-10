@@ -13,10 +13,15 @@ Journal Guidelines:
 - Include the *links to the public GitHub repo* and the *deployed site* in your journal. 
 ----------------
 
-Commit 1:
+## Commit 1:
 
 I used the website from Lab 10 debugging to heavily reference the base strucutre of my website for this first commit. I copied a lot of code so there are some class id's and labels that might not make sense, and I also delete images and replaced some text to plan out what I plan to incorporate instead to follow the requiremets of the personal project.
 
 I used Lab 10 as my fist reference because I liked how the example website for that lab had "more info" buttons and boxes that open up, which I thought I could use for my projects and such. I defientely plan to add more so that I am not just copying this website though.
 
-Just noticed that the commit messages themselves had to be meaningful, so I am recommitting with a more descriptive message.
+*Just noticed that the commit messages themselves had to be meaningful, so I am recommitting with a more descriptive message.*
+
+## Commit 2:
+
+Added fonts, buttons, my image.
+I cleaned up some design things, like making sure adjacent objects didn't have the same color, and that my color scheme looked evenly distributed. I plan to do an accessiblity check, but I wanted to have a set design for now so that I don't have to be fine-tuning design related things while trying to deal with the functional aspect of my webpage.
