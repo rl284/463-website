@@ -1,1 +1,5 @@
-Create a project Readme.md file with information about the project, how to runthe code, any outside sources used, and where the site is deployed
+Author: Rachel Lee
+Date: 6-8-2026
+Class: CS 463
+
+This is my personal website. Deployed using Github.

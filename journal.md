@@ -4,14 +4,6 @@ Author: Rachel Lee
 Date: 6-8-2026
 Class: CS 463
 ----------------
-Journal Guidelines:
-
-- Keep a journal where you outline your code contributions to this project. 
-    - This should include descriptions of how you built the features of your website, *with special emphasis on anything we didn’t learn in this class*. You should include what you worked on each session, the various issues you ran into and how you addressed those issues. 
-- From this journal, I should be able to reproduce your work on the website, so this journal should contain *good descriptions* and be *well-organized*. 
-- The journal should include *all outside sources* used in the development of this project, including any tutorial, videos, or blog posts you used. 
-- Include the *links to the public GitHub repo* and the *deployed site* in your journal. 
-----------------
 
 ## Commit 1:
 
