@@ -1,28 +1,28 @@
-const moreInfoButtons = document.querySelectorAll('.more-info-button');
+const moreInfoButtons = document.querySelectorAll(".more-info-button");
 
 for (const moreInfoButton of moreInfoButtons) {
-  moreInfoButton.addEventListener('click', (event) => {
+  moreInfoButton.addEventListener("click", (event) => {
     const popupSection = event.currentTarget.parentElement.nextElementSibling;
-    popupSection.style.display = 'block';
+    popupSection.style.display = "block";
   });
 }
 
-const closePopupButtons = document.querySelectorAll('.close-popup-button');
+const closePopupButtons = document.querySelectorAll(".close-popup-button");
 
 for (const closePopupButton of closePopupButtons) {
-  closePopupButton.addEventListener('click', (event) => {
+  closePopupButton.addEventListener("click", (event) => {
     console.log(event.target);
     const popupSection =
       event.currentTarget.parentElement.parentElement.parentElement;
-    popupSection.style.display = 'none';
+    popupSection.style.display = "none";
   });
 }
 
 const createLoadingContainer = function () {
-  const loadingContainer = document.querySelector('.loading-container');
-  const loader = document.createElement('img');
-  loader.src = './images/loader.gif';
-  loader.alt = 'loader gif while the data loads';
+  const loadingContainer = document.querySelector(".loading-container");
+  const loader = document.createElement("img");
+  loader.src = "./images/loader.gif";
+  loader.alt = "loader gif while the data loads";
   loader.width = 60;
   loader.height = 60;
   loadingContainer.append(loader);
@@ -32,36 +32,38 @@ const form = document.getElementById("Contact");
 const resetButton = document.getElementById("reset-button");
 
 resetButton.addEventListener("click", () => {
-  form.reset(); 
+  form.reset();
 });
 
 const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener("click", () => {
   let isValid = true;
-  const name = document.getElementById('name');
-  const email = document.getElementById('email');
-  const message = document.getElementById('message');
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
 
-  const nameError = document.getElementById('name-error');
-  const emailError = document.getElementById('email-error');
-  const messageError = document.getElementById('message-error');
+  const nameError = document.getElementById("name-error");
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
 
-  [nameError, emailError, messageError].forEach(err => err.textContent = '');
+  [nameError, emailError, messageError].forEach(
+    (err) => (err.textContent = ""),
+  );
 
-  if (name.value.trim() === '') {
-    nameError.textContent = 'Name is required.';
+  if (name.value.trim() === "") {
+    nameError.textContent = "Name is required.";
     isValid = false;
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email.value.trim())) {
-    emailError.textContent = 'Please enter a valid email address.';
+    emailError.textContent = "Please enter a valid email address.";
     isValid = false;
   }
 
   if (message.value.length < 10) {
-    messageError.textContent = 'Message must be at least 10 characters.';
+    messageError.textContent = "Message must be at least 10 characters.";
     isValid = false;
   }
 
@@ -69,22 +71,20 @@ submitButton.addEventListener("click", () => {
     event.preventDefault();
   }
   if (isValid) {
-    form.reset(); 
+    form.reset();
   }
-
 });
 
 const darkmodeButton = document.getElementById("darkmode-toggle");
 
 darkmodeButton.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  console.log("Theme before: ", currentTheme)
-  if (currentTheme == "light"){
-    document.documentElement.setAttribute('data-theme', 'dark');
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  console.log("Theme before: ", currentTheme);
+  if (currentTheme == "light") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
   }
-  else{
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-  const newTheme = document.documentElement.getAttribute('data-theme');
-  console.log("Theme after: ", newTheme)
+  const newTheme = document.documentElement.getAttribute("data-theme");
+  console.log("Theme after: ", newTheme);
 });
