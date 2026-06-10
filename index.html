@@ -39,16 +39,9 @@
             <a href="#Contact" class="nav-link hover-transition"
             >Contact</a>
           </li>
-          <label
-            for="darkmode-toggle-trigger"
-            id="darkmode-toggle"
-            class="darkmode-btn"
-            aria-label="toggle darkmode"
-          >
           <button class="darkmode-btn" id="darkmode-toggle" 
           aria-label="Toggle dark mode"
           ><i class="fa-solid fa-moon"></i></button>
-          </label>
         </ul>
       </nav>
       <nav class="navbar small-screen-icons small-screen-navbar">
@@ -66,16 +59,9 @@
         >
           <i class="fa-solid fa-bars"></i>
         </label>
-        <label
-          for="darkmode-toggle-trigger"
-          id="darkmode-toggle"
-          class="darkmode-btn"
-          aria-label="toggle darkmode"
-        >
         <button class="darkmode-btn" id="darkmode-toggle" 
         aria-label="Toggle dark mode"
         ><i class="fa-solid fa-moon"></i></button>
-        </label>
         </div>
         <div
           id="small-screen-navbar-element-container"
@@ -158,7 +144,11 @@
           <div class="popup-section">
             <div class="space-between-distributed-row-container">
               <h3>Course Description</h3>
-              <button class="close-popup-button">
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -190,7 +180,11 @@
           <div class="popup-section">
             <div class="space-between-distributed-row-container">
               <h3>Course Description</h3>
-              <button class="close-popup-button">
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -277,7 +271,7 @@
               <li>Debugging with GDB</li>
               <li>Object Oriented Programming and Abstract Classes</li>
             </ul>
-            <a href="https://gitlab.cecs.pdx.edu/raclee/cs302-001-program3">Link to D&D Game Manager Repo.</a>
+            <a class="link" href="https://gitlab.cecs.pdx.edu/raclee/cs302-001-program3">Link to D&D Game Manager Repo.</a>
           </div>
         </div>
       </div>

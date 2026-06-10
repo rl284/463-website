@@ -40,3 +40,4 @@ Added a light mode button and toggle functionality with javascript. Had initial 
 
 ## Commit 6:
 
+Fixed accessiblity issues using WAVE. Changed the color of visited links and fixed the labling issue I had with some buttons.

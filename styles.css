@@ -4,6 +4,7 @@
   --dark-green: rgb(5, 36, 13);
   --dark-green2: rgb(36, 65, 39);
   --lime-green: rgb(170, 250, 78);
+  --lime-green2: rgb(224, 255, 166);
   --dark-lime-green: rgb(170, 201, 100);
   --white: rgb(255, 255, 255);
   --cream: rgb(255, 252, 223);
@@ -75,6 +76,14 @@
   --footer-background: var(--dark-green2);
   --footer-color: var(--lime-green);
 }
+
+a:link {
+  color: var(--lime-green2); 
+}
+a:visited {
+  color: var(--lime-green2); 
+}
+
 html {
   box-sizing: border-box;
   font-size: 18px;
