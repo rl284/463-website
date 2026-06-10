@@ -24,4 +24,8 @@ I used Lab 10 as my fist reference because I liked how the example website for t
 ## Commit 2:
 
 Added fonts, buttons, my image.
-I cleaned up some design things, like making sure adjacent objects didn't have the same color, and that my color scheme looked evenly distributed. I plan to do an accessiblity check, but I wanted to have a set design for now so that I don't have to be fine-tuning design related things while trying to deal with the functional aspect of my webpage.
+I cleaned up some design things, like making sure adjacent objects didn't have the same color, and that my color scheme looked evenly distributed. I plan to do an accessiblity check later, but I wanted to have a set design for now so that I don't have to be fine-tuning design related things while trying to deal with the functional aspect of my webpage.
+
+## Commit 3:
+
+Filled out the text slots with information. About me, Corses Taken, and Projects. Had a problem with the navbar size changing when hover state was on, solved by issuing a border of the same type as the hover border, but with matching colors to hide it.
