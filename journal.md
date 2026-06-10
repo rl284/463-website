@@ -29,3 +29,12 @@ I cleaned up some design things, like making sure adjacent objects didn't have t
 ## Commit 3:
 
 Filled out the text slots with information. About me, Corses Taken, and Projects. Had a problem with the navbar size changing when hover state was on, solved by issuing a border of the same type as the hover border, but with matching colors to hide it.
+
+## Commit 4:
+
+Added javascript code to validate form submission inputs including making sure "name" value is not empty, "email" fits the right form via regular expression, and "message" isn't too short. Reset button also works.
+
+## Commit 5:
+
+## Commit 6:
+

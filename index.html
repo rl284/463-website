@@ -262,7 +262,7 @@
     </div>
 
     <div class="dark-background-container">
-      <form id="Contact" class="content-container form">
+      <form id="Contact" class="content-container form" novalidate>
         <h1>Contact Me</h1>
         <div
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
@@ -276,6 +276,7 @@
               id="name"
               name="name"
             />
+            <span id="name-error" class="error-msg"></span>
           </p>
         </div>
         <div
@@ -290,6 +291,7 @@
                 id="email"
                 name="email"
             />
+            <span id="email-error" class="error-msg"></span>
           </p>
         </div>
         <div
@@ -298,25 +300,26 @@
           <p class="label-input-group form-element-container">
             <span class="form-label form-row">Message Rachel:</span>
             <textarea
-                aria-label="email"
+                aria-label="message"
                 class="form-textarea form-row form-input-box"
-                type="email"
-                id="email"
-                name="email"
+                type="message"
+                id="message"
+                name="message"
             ></textarea>
+            <span id="message-error" class="error-msg"></span>
           </p>
         </div>
       </form>
       <div
         class="form space-evenly-distributed-row-container form-buttons-container"
       >
-        <input class="form-button" type="submit" value="SUBMIT" />
-        <input class="form-button" type="reset" value="RESET" />
+        <input class="form-button" id="submit-button" type="submit" value="SUBMIT" />
+        <input class="form-button" id="reset-button" type="reset" value="RESET" />
       </div>
     </div>
 
     <footer class="footer">
-      Footer
+      ⋆˚꩜｡   Made by Rachel Lee for CS 463.   ⋆˚꩜｡
     </footer>
   </body>
 </html>

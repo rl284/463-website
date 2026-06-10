@@ -27,6 +27,10 @@ body {
   width: 100%;
 }
 
+.error-msg {
+  color: var(--lime-green);
+}
+
 .dark-background-container {
   background: var(--light-green);
   color: var(--white);
