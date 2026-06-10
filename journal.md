@@ -36,5 +36,7 @@ Added javascript code to validate form submission inputs including making sure "
 
 ## Commit 5:
 
+Added a light mode button and toggle functionality with javascript. Had initial trouble getting to my HTML attribute, but I used the current console logs to see what the problem was. Added new dark and light mode color values in my styles.css.
+
 ## Commit 6:
 

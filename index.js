@@ -73,3 +73,18 @@ submitButton.addEventListener("click", () => {
   }
 
 });
+
+const darkmodeButton = document.getElementById("darkmode-toggle");
+
+darkmodeButton.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  console.log("Theme before: ", currentTheme)
+  if (currentTheme == "light"){
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  else{
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+  const newTheme = document.documentElement.getAttribute('data-theme');
+  console.log("Theme after: ", newTheme)
+});

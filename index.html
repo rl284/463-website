@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,9 +39,20 @@
             <a href="#Contact" class="nav-link hover-transition"
             >Contact</a>
           </li>
+          <label
+            for="darkmode-toggle-trigger"
+            id="darkmode-toggle"
+            class="darkmode-btn"
+            aria-label="toggle darkmode"
+          >
+          <button class="darkmode-btn" id="darkmode-toggle" 
+          aria-label="Toggle dark mode"
+          ><i class="fa-solid fa-moon"></i></button>
+          </label>
         </ul>
       </nav>
-      <nav class="navbar small-screen-navbar">
+      <nav class="navbar small-screen-icons small-screen-navbar">
+        <div class="small-screen-icons">
         <input
           type="checkbox"
           class="navbar-toggle-trigger"
@@ -55,6 +66,17 @@
         >
           <i class="fa-solid fa-bars"></i>
         </label>
+        <label
+          for="darkmode-toggle-trigger"
+          id="darkmode-toggle"
+          class="darkmode-btn"
+          aria-label="toggle darkmode"
+        >
+        <button class="darkmode-btn" id="darkmode-toggle" 
+        aria-label="Toggle dark mode"
+        ><i class="fa-solid fa-moon"></i></button>
+        </label>
+        </div>
         <div
           id="small-screen-navbar-element-container"
           class="small-screen-navbar-element-container"

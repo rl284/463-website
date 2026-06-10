@@ -2,13 +2,79 @@
   --green: rgb(45, 80, 37);
   --light-green: rgb(78, 116, 56);
   --dark-green: rgb(5, 36, 13);
+  --dark-green2: rgb(36, 65, 39);
   --lime-green: rgb(170, 250, 78);
   --dark-lime-green: rgb(170, 201, 100);
   --white: rgb(255, 255, 255);
   --cream: rgb(255, 252, 223);
   --light-cream: rgb(245, 241, 226);
+  --dark-cream: rgb(222, 224, 175);
 }
 
+[data-theme="light"]{
+  --error-msg-color: var(--lime-green);
+  --dark-bg-container-background: var(--light-green);
+  --dark-bg-container-color: var(--white);
+  --light-bg-container-background: var(--cream);
+  --light-bg-container-color: var(--dark-green);
+  --more-info-background: var(--dark-lime-green);
+  --more-info-color: var(--dark-green);
+  --more-info-hover-background: var(--dark-lime-green);
+  --more-info-hover-color: var(--dark-green);
+  --navbar-circ-color:var(--cream);
+  --navbar-circ-hover-background:var(--lime-green);
+  --navbar-circ-hover-color: var(--dark-green);
+  --navbar-close-color: var(--lime-green);
+  --navbar-close-hover-background: var(--dark-green);
+  --navbar-close-hover-color: var(--dark-green);
+  --close-popup-color: var(--dark-green);
+  --close-popup-hover-background: var(--light-green);
+  --close-popup-hover-color: var(--light-green);
+  --form-button-background: var(--green);
+  --form-button-color: var(--light-cream);
+  --form-button-border: var(--green);
+  --form-button-hover-background: var(--dark-lime-green);
+  --form-button-hover-color: var(--dark-green);
+  --navbar-background: var(--green);
+  --navbar-item-border: var(--green);
+  --navbar-item-hover-border: var(--green);
+  --navlink-color: var(--cream);
+  --popup-section-background: var(--light-cream);
+  --footer-background: var(--green);
+  --footer-color: var(--cream);
+}
+[data-theme="dark"]{
+  --error-msg-color: var(--lime-green);
+  --dark-bg-container-background: var(--dark-green);
+  --dark-bg-container-color: var(--dark-cream);
+  --light-bg-container-background: var(--dark-green2);
+  --light-bg-container-color: var(--dark-lime-green);
+  --more-info-background: var(--dark-lime-green);
+  --more-info-color: var(--green);
+  --more-info-hover-background: var(--green);
+  --more-info-hover-color: var(--lime-green);
+  --navbar-circ-color:var(--dark-green);
+  --navbar-circ-hover-background:var(--lime-green);
+  --navbar-circ-hover-color: var(--dark-green);
+  --navbar-close-color: var(--lime-green);
+  --navbar-close-hover-background: var(--dark-green);
+  --navbar-close-hover-color: var(--dark-green);
+  --close-popup-color: var(--dark-green);
+  --close-popup-hover-background: var(--light-green);
+  --close-popup-hover-color: var(--light-green);
+  --form-button-background: var(--green);
+  --form-button-color: var(--cream);
+  --form-button-border: var(--green);
+  --form-button-hover-background: var(--lime-green);
+  --form-button-hover-color: var(--dark-green);
+  --navbar-background: var(--dark-green2);
+  --navbar-item-border: var(--dark-green2);
+  --navbar-item-hover-border: var(--lime-green);
+  --navlink-color: var(--lime-green);
+  --popup-section-background: var(--green);
+  --footer-background: var(--dark-green2);
+  --footer-color: var(--lime-green);
+}
 html {
   box-sizing: border-box;
   font-size: 18px;
@@ -28,17 +94,17 @@ body {
 }
 
 .error-msg {
-  color: var(--lime-green);
+  color: var(--error-msg-color);
 }
 
 .dark-background-container {
-  background: var(--light-green);
-  color: var(--white);
+  background: var(--dark-bg-container-background);
+  color: var(--dark-bg-container-color);
 }
 
 .light-backgournd-container{
-  background: var(--cream);
-  color: var(--dark-green);
+  background: var(--light-bg-container-background);
+  color: var(--light-bg-container-color);
 }
 
 .content-container {
@@ -64,8 +130,8 @@ body {
 
 .more-info-button {
   text-align: center;
-  background-color: var(--dark-lime-green);
-  color: var(--dark-green);
+  background: var(--more-info-background);
+  color: var(--more-info-color);
   width: 100px;
   height: 30px;
   margin: 1rem auto;
@@ -78,15 +144,15 @@ body {
 }
 
 .more-info-button:hover {
-  background-color: var(--lime-green);
-  color: var(--dark-green);
+  background-color: var(--more-info-hover-background);
+  color: var(--more-info-hover-color);
   cursor: pointer;
   transition: 0.25s;
 }
 
 .navbar-circular-icon-button {
   font-size: 1.5rem;
-  color: var(--cream);
+  color: var(--navbar-circ-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,15 +164,38 @@ body {
 }
 
 .navbar-circular-icon-button:hover {
-  background-color: var(--lime-green);
-  color: var(--dark-green);
+  background-color: var(--navbar-circ-hover-background);
+  color: var(--navbar-circ-hover-color);
   cursor: pointer;
   transition: 0.25s;
 }
 
+.darkmode-btn{
+  border: none;
+  color: var(--lime-green);
+  margin-right: .2rem;
+  margin-bottom: .2rem;
+  margin-left: .2rem;
+  margin-top: .2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  flex-direction: column;
+}
+.darkmode-btn:hover{
+  background-color: var(--lime-green);
+  color: var(--dark-green);
+}
+
 .navbar-toggle-close-button {
   font-size: 1.5rem;
-  color: var(--lime-green);
+  color: var(--navbar-close-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,17 +205,18 @@ body {
   background-color: transparent;
   border: none;
   margin: auto;
+  flex-direction: column;
 }
 
 .navbar-toggle-close-button:hover {
-  background-color: var(--lime-green);
-  color: var(--dark-green);
+  background-color: var(--navbar-close-hover-background);
+  color: var(--navbar-close-hover-color);
   cursor: pointer;
   transition: 0.25s;
 }
 
 .close-popup-button {
-  color: var(--dark-green);
+  color: var(--close-popup-color);
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -139,16 +229,16 @@ body {
 }
 
 .close-popup-button:hover {
-  color: var(--light-green);
-  background-color: var(--lime-green);
+  color: var(--close-popup-hover-color);
+  background-color: var(--close-popup-hover-background);
   cursor: pointer;
 }
 
 .form-button {
   width: 180px;
-  background-color: var(--green);
-  color: var(--light-cream);
-  border: 4px solid var(--green);
+  background-color: var(--form-button-background);
+  color: var(--form-button-color);
+  border: 4px solid var(--form-button-border);
   font-family: inherit;
   font-size: 1.3rem;
   display: block;
@@ -157,8 +247,8 @@ body {
 }
 
 .form-button:hover {
-  background-color: var(--dark-lime-green);
-  color: var(--dark-green);
+  background-color: var(--form-button-hover-background);
+  color: var(--form-button-hover-color);
   cursor: pointer;
   transition: 0.25s;
 }
@@ -167,7 +257,7 @@ body {
   position: fixed;
   width: 100%;
   padding: 15px;
-  background-color: var(--green);
+  background-color: var(--navbar-background);
   box-sizing: border-box;
 }
 
@@ -177,6 +267,15 @@ body {
 
 .navbar-toggle-trigger:checked ~ .small-screen-navbar-element-container {
   display: block;
+}
+.small-screen-icons{
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px; 
+  flex-direction: row;
 }
 
 .nav-list {
@@ -188,7 +287,7 @@ body {
 }
 
 .nav-list-item {
-  border: 2px solid var(--green);
+  border: 2px solid var(--navbar-item-border);
   display: block;
   padding: 10px;
   width: 170px;
@@ -196,14 +295,14 @@ body {
 }
 
 .nav-list-item:hover {
-  border: 2px solid var(--lime-green);
+  border: 2px solid var(--navbar-item-hover-border);
   border-radius: 20px;
   cursor: pointer;
 }
 
 .nav-link {
   text-decoration: none;
-  color: var(--cream);
+  color: var(--navlink-color);
 }
 
 .small-screen-navbar {
@@ -264,7 +363,7 @@ body {
 }
 
 .popup-section {
-  background-color: var(--light-cream);
+  background-color: var(--popup-section-background);
   max-width: 846px;
   max-height: 70vh;
   overflow-y: scroll;
@@ -286,16 +385,6 @@ body {
 
 .projects-text-margin-right {
   margin-right: 30px;
-}
-
-.bullet-point {
-  display: block;
-  background-color: var(--cream);
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  margin-right: 10px;
-  margin-left: 2em;
 }
 
 .form {
@@ -338,8 +427,8 @@ body {
 }
 
 .footer {
-  background-color: var(--green);
-  color: var(--cream);
+  background-color: var(--footer-background);
+  color: var(--footer-color);
   padding: 30px;
   text-align: center;
 }
@@ -382,7 +471,6 @@ body {
   }
 
   .popup-section {
-    background-color: var(--dark-lime-green);
     margin: 150px 30px;
   }
 }
